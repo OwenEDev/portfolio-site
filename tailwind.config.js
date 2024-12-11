@@ -17,7 +17,24 @@ const test = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui({
+    layout: {},
+    themes: {
+      light: {
+        colors: {
+          background: '#E9EDDE',
+          primary: '#F0A202',
+          secondary: '#D95D39'
+        }
+      },
+      dark: {
+        colors: {
+          background: '#050517',
+          primary: '#202C59',
+        }
+      }
+    },  
+  })],
 }
 
 export default test
