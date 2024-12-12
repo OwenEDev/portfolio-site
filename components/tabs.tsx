@@ -12,9 +12,9 @@ const TabComponent = () => {
                         I have used a variety of front-end technologies, specialising in React, and plenty of back-end and database technology too,
                         such as the AWS suite, SQL, and python.
                     </h2>
-                    <h1 className="p-5">
+                    <a href="/Owen_Evans_Software_Dev_CV.pdf" target="_blank" className="hover:text-secondary">
                         View my CV
-                    </h1>
+                    </a>
                 </div>
             </Tab>
             <Tab title={<h2 className="text-text">My Portfolio</h2>}>

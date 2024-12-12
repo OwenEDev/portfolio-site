@@ -24,7 +24,7 @@ const test = {
         colors: {
           background: '#E9EDDE',
           primary: '#F0A202',
-          secondary: '#D95D39',
+          secondary: '#db2f2c',
           text: 'black'
         }
       },
@@ -32,6 +32,7 @@ const test = {
         colors: {
           background: '#050517',
           primary: '#202C59',
+          secondary: '#db2f2c',
           text: 'white',
         }
       }
