@@ -24,13 +24,15 @@ const test = {
         colors: {
           background: '#E9EDDE',
           primary: '#F0A202',
-          secondary: '#D95D39'
+          secondary: '#D95D39',
+          text: 'black'
         }
       },
       dark: {
         colors: {
           background: '#050517',
           primary: '#202C59',
+          text: 'white',
         }
       }
     },  
