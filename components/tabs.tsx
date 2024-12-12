@@ -15,7 +15,7 @@ const TabComponent = () => {
                 </div>
             </Tab>
             <Tab title={<h2 className="text-text">My Portfolio</h2>}>
-                <div className="bg-primary w-full h-[500px] rounded-lg">
+                <div className="bg-primary w-full h-[1000px] rounded-lg">
                     
                 </div></Tab>
             <Tab title={<h2 className="text-text">Call Me</h2>}>
