@@ -1,4 +1,3 @@
-import AnimatedBg from "@/components/animatedBg";
 import TabComponent from "@/components/tabs";
 import DefaultLayout from "@/layouts/default";
 
