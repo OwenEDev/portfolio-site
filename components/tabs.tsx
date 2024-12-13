@@ -6,7 +6,7 @@ const TabComponent = () => {
         <Tabs variant={"light"} color="primary">
             <Tab title={<h2 className="text-text">About Me</h2>}>
                 <div className="bg-primary w-full rounded-lg flex flex-col items-center p-7">
-                    <h1 className="text-4xl font-semibold">Hello, I'm Owen</h1>
+                    <h1 className="text-4xl font-semibold text-center">Hello, I'm Owen</h1>
                     <h2 className="text-center p-5 font-semibold">
                         I am a software developer based in Manchester, UK.
                         I have used a variety of front-end technologies, specialising in React, and plenty of back-end and database technology too,
@@ -32,3 +32,7 @@ const TabComponent = () => {
 }
 
 export default TabComponent;
+
+//todo
+//appbar icon appaers at certain sizes - remove
+//fix responsiveness issues - off center tabs, theme button hidden
