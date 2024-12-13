@@ -7,19 +7,17 @@ import { useRouter } from "next/router";
 import { fontSans, fontMono } from "@/config/fonts";
 import "@/styles/globals.css";
 import "@/styles/bubbles.scss"
-import { createContext, useState } from "react";
-import colourModeContext from "@/config/contexts";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
-  const [currentTheme, setCurrentTheme] = useState('');
+  // const [currentTheme, setCurrentTheme] = useState(''); //uncommenting while background is not in use
   return (
     <NextUIProvider navigate={router.push}>
       <NextThemesProvider>
-        <colourModeContext.Provider value={{currentTheme, setCurrentTheme}}>
+        {/* <colourModeContext.Provider value={{currentTheme, setCurrentTheme}}> commenting out while background is not in use*/} 
         <Component {...pageProps} />
-        </colourModeContext.Provider>
+        {/* </colourModeContext.Provider> */}
       </NextThemesProvider>
     </NextUIProvider>
   );

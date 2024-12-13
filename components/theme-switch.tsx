@@ -1,9 +1,8 @@
-import { FC, useState, useEffect, useContext } from "react";
+import { FC, useState, useEffect } from "react";
 import { VisuallyHidden } from "@react-aria/visually-hidden";
 import { SwitchProps, useSwitch } from "@nextui-org/switch";
 import { useTheme } from "next-themes";
 import clsx from "clsx";
-import colourModeContext from "@/config/contexts";
 
 import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
 
@@ -20,13 +19,13 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
 
   const { theme, setTheme } = useTheme();
 
-  let themeContext = useContext(colourModeContext)
+  // let themeContext = useContext(colourModeContext)
 
-  useEffect(() => {
-    if (themeContext !== null && themeContext.setCurrentTheme !== undefined) {
-      themeContext.setCurrentTheme(theme as string);
-    }
-  }, [theme])
+  // useEffect(() => {
+  //   if (themeContext !== null && themeContext.setCurrentTheme !== undefined) {
+  //     themeContext.setCurrentTheme(theme as string);
+  //   }
+  // }, [theme]) //commenting out while background is not in use
 
   const onChange = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
